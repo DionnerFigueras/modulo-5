@@ -5,7 +5,6 @@ import LoginEmployee from './components/LoginEmployee';
 import LoginEmployeer from './components/LoginEmployeer';
 import RegisterEmployee from './components/RegisterEmployee';
 import RegisterEmployeer from './components/RegisterEmployeer';
-import Applicants from './components/Applicants';
 
 
 function App() {
@@ -37,10 +36,7 @@ function App() {
     } else if (registerEmployeer) {
       return <RegisterEmployeer setRegisterEmployeer={setRegisterEmployeer} />
 
-    }else if(applicant) {
-      return <Applicants />
     }
-
 
   }
 
