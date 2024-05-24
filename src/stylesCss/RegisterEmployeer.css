@@ -1,0 +1,69 @@
+.register-employeer {
+    height: 100vh;
+    background-image: radial-gradient(circle at 63.75% 87.78%, #93f5af 0, #77ebab 25%, #50dfa5 50%, #00d2a0 75%, #00c99f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  
+  .content-form h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .content-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+  }
+  
+  .content-form form label {
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .content-form form input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .content-form form button {
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #45eeab ;
+    border: 0;
+    border-radius: 5px;
+  }
+  
+  .content-form form button:hover {
+    background:#3bc78f;
+  }
+  
+  .content-form form a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  
+  .content-form form a:hover {
+    color: #545454;
+  }

@@ -1,0 +1,72 @@
+.register-employee {
+  height: 100vh;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.content-form h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.content-form form label {
+  justify-self: flex-start;
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content-form form input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.content-form form button {
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #cc2e72 ;
+  border: 0;
+  border-radius: 5px;
+}
+
+.content-form form button:hover {
+  background:#951f4c;
+  color: white;
+
+}
+
+.content-form form a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.content-form form a:hover {
+  color: #545454;
+}

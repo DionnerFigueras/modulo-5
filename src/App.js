@@ -1,25 +1,63 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Home from './components/Home';
+import LoginEmployee from './components/LoginEmployee';
+import LoginEmployeer from './components/LoginEmployeer';
+import RegisterEmployee from './components/RegisterEmployee';
+import RegisterEmployeer from './components/RegisterEmployeer';
+import Applicants from './components/Applicants';
+
 
 function App() {
+  const [loginEmployee, setLoginEmployee] = useState(false);
+  const [loginEmployeer, setLoginEmployeer] = useState(false);
+  const [registerEmployee, setRegisterEmployee] = useState(false);
+  const [registerEmployeer, setRegisterEmployeer] = useState(false);
+  const [applicant, setApplicants] = useState(false);
+
+
+  const getContent = () => {
+    if (!loginEmployee && !loginEmployeer && !registerEmployee && !registerEmployeer) {
+      return <Home
+        setLoginEmployee={setLoginEmployee}
+        setLoginEmployeer={setLoginEmployeer}
+        setRegisterEmployee={setRegisterEmployee}
+        setRegisterEmployeer={setRegisterEmployeer}
+      />
+
+    } else if (loginEmployee) {
+      return <LoginEmployee setLoginEmployee={setLoginEmployee} setApplicants={setApplicants} />
+
+    } else if (loginEmployeer) {
+      return <LoginEmployeer setLoginEmployeer={setLoginEmployeer} />
+
+    } else if (registerEmployee) {
+      return <RegisterEmployee setRegisterEmployee={setRegisterEmployee} />
+
+    } else if (registerEmployeer) {
+      return <RegisterEmployeer setRegisterEmployeer={setRegisterEmployeer} />
+
+    }else if(applicant) {
+      return <Applicants />
+    }
+
+
+  }
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {getContent()}
+
+
     </div>
   );
 }
 
 export default App;
+
+{/*       {
+        !user.length > 0
+        ? <LoginEmployeer setUser={setUser} />
+        : <Applicants user={user} setUser={setUser} />
+      } */}

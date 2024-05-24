@@ -1,0 +1,158 @@
+.App-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px lightgrey;
+  }
+  
+  .App-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .App-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .App-logo p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fa3939;
+  }
+  
+  .App-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .App-login a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+  }
+  
+  .button-login {
+    color: #e71b1b;
+    border: 1px solid #e71b1b;
+    position: relative;
+  }
+
+  .content-list-login {
+    background: #fff;
+    padding: 4px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    position: absolute;
+    right: 120px;
+    top: 55px;
+  }
+
+  .content-list-login ul li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .content-list-login ul li:hover {
+    background: #fa3939;
+    color: #fff;
+  }
+  
+  .button-register {
+    background: #e71b1b;
+    color: #fff;
+    position: relative;
+  }
+
+  .content-list-register {
+    background: #fff;
+    padding: 4px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    position: absolute;
+    right: 15px;
+    top: 55px;
+  }
+
+  .content-list-register ul li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .content-list-register ul li:hover {
+    background: #e71b1b;
+    color: #fff;
+  }
+  
+  .main {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    margin-top: 30px;
+    background: linear-gradient(rgba(5,7,12, 0.5), rgba(5,7,12,0.5)) ,url('../images/imagen-inicio.webp');
+    background-size: cover;
+    flex: 1 1 0;
+    height: 400px;
+  }
+  
+  .main h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .main p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #d4d2d2;
+  }
+  
+  .works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 20px;
+    text-align: center;
+  }
+  
+  .p-main {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .p-other {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .content-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .content-img img{
+    width: 150px;
+    height: auto;
+    padding: 15px;
+  }
+  
